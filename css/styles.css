@@ -1,0 +1,13 @@
+.center {
+    display: flex;
+    flex-direction: row-reverse;
+    /* place-items: center; */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+section > div {
+    display: flex;
+}
