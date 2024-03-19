@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sr-only {
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;
+        height: 1px !important;
+        overflow: hidden !important;
+        margin: -1px !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        white-space: nowrap !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="contact-wrapper">
+        <!-- Contact form -->
+        <div>
+          <form
+            name="contact-form"
+            id="contact-form"
+            action="/success/"
+            method="POST"
+            data-netlify="true"
+            data-netilfy-honeypot="bot-field"
+          >
+            <!-- Robot honeypot. That rhymes! -->
+            <div class="sr-only">
+              <label>
+                Robot honeypot: Leave this field empty if you're human
+                <input name="bot-field" />
+              </label>
+            </div>
+            <!-- Name input -->
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <!-- Email input -->
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <!-- Message input -->
+            <div>
+              <label for="description">Message</label>
+              <textarea
+                rows="3"
+                id="description"
+                name="message"
+                placeholder="Type your message here"
+                required
+              ></textarea>
+            </div>
+            <!-- Submit button -->
+            <div>
+              <button class="outline">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
