@@ -1,0 +1,21 @@
+.button {
+    text-decoration: none;
+    color: black;
+    background-color: var(--color-primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.25rem;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+        background-color: pink;
+    }
+}
+
+.button__secondary {
+    background-color: var(--color-primary-darker);
+    color: white;
+
+    &:hover {
+        color: inherit;
+    }
+}
