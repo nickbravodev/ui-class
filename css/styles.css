@@ -64,7 +64,7 @@ img {
     justify-content: center;
     gap: 0.25rem;
     order: 2;
-
+    
     @media (min-width: 900px) {
         order: 1;
     }
@@ -73,9 +73,37 @@ img {
 .image-block {
     width: 100%;
     order: 1;
-
+    
     @media (min-width: 900px) {
-        order: 2;
+        order: 0;
+    }
+}
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-md-0 {
+    @media (min-width: 900px) {
+        order: 0;
+    }
+}
+
+.order-md-1 {
+    @media (min-width: 900px) {
+        order: 1;
     }
 }
 
@@ -87,4 +115,28 @@ img {
 
 .hero-section {
     background-color: white;
+}
+
+.body-section {
+    background-color: red;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @media (min-width: 900px) {
+            flex-direction: row;
+        }
+    }
+
+    &.reverse {
+        & > div {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.about-background {
+    background-color: blue;
 }
